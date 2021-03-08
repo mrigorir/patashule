@@ -173,97 +173,97 @@ main h2 {
 
 .footer {
   padding: 2em 0;
-background-color: black;
+  background-color: black;
 }
 
 .footer-links {
-border-top: solid 1px white;
-border-bottom: solid 1px white;
-margin: 0 auto;
-width: 95%;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .footer-links__list {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-links__list-item {
-display: inline-block;
-padding: 0.5em;
+  display: inline-block;
+  padding: 0.5em;
 }
 
 .footer-links .left-links {
-flex: 1;
+  flex: 1;
 }
 
 .footer-links .right-links {
-flex: 1;
+  flex: 1;
 }
 
 .link {
-font-size: 18px;
+  font-size: 18px;
 }
 
 .link:hover {
-background-color: #444;
+  background-color: #444;
 }
 
 .center-logo {
-top: 20px;
-left: 46.7%;
-border: solid 1px white;
-padding: 1.8em 2em 1.7em 2em;
-background-color: #000;
+  top: 20px;
+  left: 46.7%;
+  border: solid 1px white;
+  padding: 1.8em 2em 1.7em 2em;
+  background-color: #000;
 }
 
 .center-logo:hover {
-background-color: #444;
-cursor: pointer;
+  background-color: #444;
+  cursor: pointer;
 }
 
 .center-logo i {
-font-size: 4em;
+  font-size: 4em;
 }
 
 .footer .sub-contact-about {
-margin: 6em auto 2em auto;
-width: 90%;
+  margin: 6em auto 2em auto;
+  width: 90%;
 }
 
 .footer .btn-footer-sub {
-padding: 0.2em 0.5em;
-border-radius: 2px;
-background-color: #444;
+  padding: 0.2em 0.5em;
+  border-radius: 2px;
+  background-color: #444;
 }
 
 .footer .sub-input-btn input {
-background-color: transparent;
+  background-color: transparent;
 }
 
 .sub-input-btn input:focus {
-outline: none;
+  outline: none;
 }
 
 .sub-input-btn ::placeholder {
-color: #444;
-opacity: 1;
+  color: #444;
+  opacity: 1;
 }
 
 .footer span {
-line-height: 20px;
+  line-height: 20px;
 }
 
 .footer .learn-more {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer .learn-more:hover {
-color: #d35649;
+  color: #d35649;
 }
 
 .copyright-footer {
-background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -271,7 +271,6 @@ background-color: #1f1f1f;
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 @media only screen and (max-width: 1024px) {
-  
   .top-navbar .brand {
     padding-bottom: 0;
   }
@@ -312,7 +311,6 @@ background-color: #1f1f1f;
   .info-detail {
     height: 15em;
   }
-  
 }
 
 @media only screen and (max-width: 767px) {
@@ -411,9 +409,8 @@ background-color: #1f1f1f;
   }
 }
 
-@media only screen and (max-width: 1500px) { 
+@media only screen and (max-width: 1500px) {
   .center-logo {
     font-size: 10px;
   }
 }
-

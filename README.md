@@ -2,7 +2,7 @@
 
 # Patashule
 
-Screenshot: ![Homepage](images/screenshot.png) 
+![Homepage](images/screenshot.png) 
 
 HTML &amp; CSS capstone project, created by following patachule design such as layout, fonts and styles. 
 
