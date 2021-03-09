@@ -17,10 +17,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
   </script>
-  <title>DrugstoreLooker - Homepage</title>
+  <title>DrugstoreLooker - Search results</title>
 </head>
 
-<body>
+<body class="bg-results-color">
   <!-- Navbar -->
   <header>
     <nav class="bg-primary-color sticky">
@@ -36,7 +36,7 @@
           <div class="links d-md-flex align-items-xl-end mr-md-0 mr-xl-5">
             <ul class="top-navbar__list list-unstyled d-flex justify-content-center">
               <li class="top-navbar__list-item">
-                <a href="index.html" class="text-uppercase text-decoration-none navbar-link home-active">
+                <a href="index.html" class="text-uppercase text-decoration-none text-white navbar-link">
                   <i class="fas fa-search font-16 color-red"></i>
                   <span class="d-none d-lg-inline font-15 font-weight-bold pl-1">Home</span>
                 </a>
@@ -54,7 +54,7 @@
                 </a>
               </li>
               <li class="top-navbar__list-item">
-                <a href="search_result.html" class="text-uppercase text-decoration-none text-white navbar-link">
+                <a href="search_result.html" class="text-uppercase text-decoration-none navbar-link result-active">
                   <i class="fas fa-bars font-16 color-brown"></i>
                   <span class="d-none d-lg-inline font-15 font-weight-bold pl-1">Results</span>
                 </a>
@@ -65,101 +65,158 @@
       </div>
     </nav>
   </header>
-  <!-- Search block -->
-   <section class="showcase-area">
-    <div class="row no-gutters">
-      <div class="col-12 text-center">
-        <h1 class="main-heading font-weight-bold text-white d-inline-block showcase-area__title">
-          PATA SHULE... THE WAY YOU CONNECT WITH YOUR PREFERRED DRUGSTORE
-        </h1>
-        <div class="search-area d-flex bg-gray-form-search">
-          <span class="search-tip font-15 font-weight-bold">SEARCH BY KEY WORD:</span>
-          <div class="text-btn">
-            <input class="font-18" type="search" />
-            <a href="./search_result.html"
-              class="btn-search text-decoration-none text-white font-16 d-inline-block text-center border-0">
-              SEARCH
-            </a>
+  <!-- Search Filter -->
+  <section class="container-fluid bg-gray-filter mt-5 p-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-gray-filter text-center font-weight-bold filter-title">Filter by drugstore name, country, and
+          type of
+          medicament</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <form class="mt-4">
+          <div class="form-row">
+            <div class="form-group col-sm-12 col-md-6 col-lg-3">
+              <label for="">Drougstore Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-sm-12 col-md-6 col-lg-2">
+              <label for="">Country</label>
+              <select class="form-control">
+                <option>Venezuela</option>
+                <option>United States</option>
+                <option>Nigeria</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-12 col-md-6 col-lg-2">
+              <label for="">Medicament</label>
+              <select class="form-control">
+                <option>Analgesics</option>
+                <option>Antipyretic</option>
+                <option>Antiallergic</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-12 col-md-6 col-lg-1">
+              <label for="">Type</label>
+              <select class="form-control">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-12 col-md-6 col-lg-1">
+              <label for="">Recipe</label>
+              <select class="form-control">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-12 col-md-6 col-lg-1">
+              <label for="">Pay</label>
+              <select class="form-control">
+                <option>Yes</option>
+                <option>OR yes</option>
+              </select>
+            </div>
+            <div class=" col-sm-12 col-md-6 col-lg-2 flex-row d-flex filter-buttons">
+              <button type="submit" class="align-self-center mr-1 mt-3 btn btn-primary">Search</button>
+              <button type="submit" class="align-self-center mt-3 btn btn-warning text-white"> <i
+                  class="fas fa-edit"></i> Clear</button>
+            </div>
           </div>
-        </div>
-        <a class="d-inline-block btn-works hover-black bg-gray font-18 text-dark text-decoration-none" href="#">How It
-          Works</a>
+        </form>
       </div>
     </div>
   </section>
-  <!-- Body -->
-  <main class="steps">
-    <div class="row no-gutters">
+  <!-- Search Filter -->
+  <main class="container-fluid">
+    <div class="row">
       <div class="col-12">
-        <h2 class="text-primary-color text-center font-22 font-weight-bold">
-          Patashule works in four simple steps
-        </h2>
+        <h1 class="text-white text-center font-28 results-title font-weight-bold">
+          Found nine (9) results that matches your order
+        </h1>
       </div>
     </div>
-    <div class="row no-gutters">
-      <div class="col-12 col-lg-6 mt-md-5 mt-sm-2">
-        <div class="card text-center border-0">
-          <i class="main-icon fas fa-search color-blue"></i>
-          <div class="card-body card-detail">
-            <h3 class="text-gray font-weight-bold font-22 text-uppercase">
-              1-SEARCH:
+    <div class="container mb-5">
+      <div class="row mb-sm-5 mb-md-5 mb-lg-0">
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #1
             </h3>
-            <p class="text-lightgray font-15 font-weight-bold">
-              It is very simple you can search for your preferred drugstore by any keywork like
-              name, place, city etc. Alternatively you can click on seach
-              button on top navbar to set the list of all data and choose
-              one by clickinng it.
-            </p>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-6 mt-md-5 mt-sm-2">
-        <div class="card text-center border-0">
-          <i class="main-icon fas fa-book-medical color-red"></i>
-          <div class="card-body card-detail">
-            <h3 class="text-gray font-weight-bold font-22 text-uppercase">
-              2- LOCATE:
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #2
             </h3>
-            <p class="text-lightgray font-15 font-weight-bold">
-              Get to see where is located by clicking on the drugstore
-              profile. It is even more exciting you can get the direction from anywhare.
-            </p>
           </div>
         </div>
-      </div>
-
-      <div class="col-12 col-lg-6 mt-md-5 mt-sm-2">
-        <div class="card text-center border-0">
-          <i class="main-icon fas fa-chalkboard-teacher color-green"></i>
-          <div class="card-body card-detail">
-            <h3 class="text-gray font-weight-bold font-22 text-uppercase">
-              3- Make your payment:
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #3
             </h3>
-            <p class="text-lightgray font-15 font-weight-bold">
-              Apply for the payment of your choice. Click on
-              the apply button to get the application form. We also follow up
-              on the application to make sure you get reply on time.
-            </p>
           </div>
         </div>
-      </div>
-
-      <div class="col-12 col-lg-6 mt-md-5 mt-sm-2">
-        <div class="card text-center border-0">
-          <i class="main-icon fas fa-truck color-brown"></i>
-          <div class="card-body card-detail">
-            <h3 class="text-gray font-weight-bold font-22 text-uppercase">
-              4- Go-To-Go!
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #4
             </h3>
-            <p class="text-lightgray font-15 font-weight-bold">
-              Once your payment has been confirmed we will send to you your purchase using the fastest transport.
-            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #5
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #6
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #6
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-5">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #8
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 my-5 mx-md-auto">
+          <div class="results-box">
+            <img src="images/red-cross.png" alt="" class="img-fluid">
+            <h3 class="text-white text-center fon-24 mt-3 font-weight-bold">
+              Search #9
+            </h3>
           </div>
         </div>
       </div>
     </div>
   </main>
-<!-- Footer -->
+  <!-- Footer -->
   <footer>
     <div class="footer position-relative">
       <div class="container-fluid">
