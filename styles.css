@@ -15,7 +15,7 @@
 }
 
 .color-blue {
-  color:#4e9ad8;
+  color: #4e9ad8;
 }
 
 .color-green {
@@ -225,8 +225,6 @@ main h2 {
   text-decoration: none;
 }
 
-
-
 /* Footer */
 
 .footer {
@@ -330,7 +328,7 @@ main h2 {
   .top-navbar .brand {
     padding-bottom: 0;
   }
-  
+
   .top-navbar .links {
     flex: 2;
   }
@@ -370,7 +368,6 @@ main h2 {
 }
 
 @media only screen and (max-width: 768px) {
-  
   .top-navbar {
     flex-direction: column;
   }
@@ -459,11 +456,9 @@ main h2 {
     height: 180px;
     width: 180px;
   }
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1500px) {
-  
   .center-logo {
     font-size: 10px;
   }
@@ -472,4 +467,4 @@ main h2 {
     width: 250px;
     height: 250px;
   }
-} 
+}
