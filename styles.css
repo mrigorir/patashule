@@ -1,6 +1,5 @@
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-              Base
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +11,27 @@
 }
 
 .bg-primary-color {
-  background: #d35649;
+  background: #7249d3;
+}
+
+.color-blue {
+  color:#4e9ad8;
+}
+
+.color-green {
+  color: chartreuse;
+}
+
+.color-brown {
+  color: chocolate;
+}
+
+.color-red {
+  color: #f42;
 }
 
 .text-primary-color {
-  color: #d35649;
+  color: #7249d3;
 }
 
 .text-gray {
@@ -71,9 +86,19 @@
   font-size: 30px;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-              NAVBAR
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.font-40 {
+  font-size: 40px;
+}
+
+.font-50 {
+  font-size: 50px;
+}
+
+.font-60 {
+  font-size: 60px;
+}
+
+/* Navbar */
 
 .top-navbar {
   display: flex;
@@ -104,9 +129,7 @@
   margin-right: 1em;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-              Home Page
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Home page */
 
 .showcase-area {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), transparent url(images/img-1.jpg) center center/cover no-repeat;
@@ -141,7 +164,7 @@
   border: solid 1px #000;
   padding: 7px 25px 6px 25px;
   margin-left: -1%;
-  background: #d35649;
+  background: #7249d3;
 }
 
 .showcase-area .btn-works {
@@ -167,9 +190,44 @@ main h2 {
   margin-bottom: 3em;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-              Footer
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* About */
+
+.about-1 {
+  background-color: rgb(105, 87, 216);
+}
+
+.about-2 {
+  background-color: rgb(107, 98, 165);
+}
+
+.about-3 {
+  background-color: rgb(34, 19, 129);
+}
+
+.about__img {
+  width: 45vh;
+  height: 45vh;
+}
+
+.about__text {
+  margin-top: 1em;
+}
+
+.btn-find {
+  width: 8em;
+  margin-top: 2em;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  background-color: #7249d3;
+}
+
+.btn-find:hover {
+  text-decoration: none;
+}
+
+
+
+/* Footer */
 
 .footer {
   padding: 2em 0;
@@ -259,22 +317,20 @@ main h2 {
 }
 
 .footer .learn-more:hover {
-  color: #d35649;
+  color: #7249d3;
 }
 
 .copyright-footer {
   background-color: #1f1f1f;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-              Queries
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Queries */
 
 @media only screen and (max-width: 1024px) {
   .top-navbar .brand {
     padding-bottom: 0;
   }
-
+  
   .top-navbar .links {
     flex: 2;
   }
@@ -313,7 +369,8 @@ main h2 {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  
   .top-navbar {
     flex-direction: column;
   }
@@ -371,7 +428,7 @@ main h2 {
   .search-area .btn-search {
     margin-left: 0;
     width: 98%;
-    background: #d35649;
+    background: #7249d3;
   }
 
   .showcase-area .btn-works {
@@ -398,19 +455,21 @@ main h2 {
     margin: auto;
   }
 
-  .about img {
-    height: 40vw;
-    width: 40vw;
+  .about__img {
+    height: 180px;
+    width: 180px;
   }
 
-  .about .right-image {
-    display: flex;
-    justify-content: center;
-  }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 768px) and (max-width: 1500px) {
+  
   .center-logo {
     font-size: 10px;
   }
-}
+
+  .about__img {
+    width: 250px;
+    height: 250px;
+  }
+} 
