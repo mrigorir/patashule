@@ -30,7 +30,7 @@ HTML &amp; CSS capstone project, created by following patachule design such as l
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/mrigorir/patashule/issues).
 
 ## Show your support
 
@@ -38,8 +38,5 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks for this Website Design [PATASHULE](https://www.behance.net/gallery/25563385/PatashuleKE).
+- Website design created by Mathew Njuguna [Behance](https://www.behance.net/gallery/25563385/PatashuleKE).
 
-## 📝 License
-
-This project is [MIT](https://opensource.org/licenses/MIT) licensed.
