@@ -25,7 +25,7 @@ HTML &amp; CSS capstone project, created by following patachule design such as l
 
 - GitHub: [@mrigorir](https://github.com/mrigorir)
 - Twitter: [@marcoparra311](https://twitter.com/marcoparra311)
-- LinkedIn: [Marco Parra](https://www.linkedin.com/in/marco-alosno-parra/)
+- LinkedIn: [Marco Parra](https://www.linkedin.com/in/marco-alonso-parra/)
 - email: (marcoparra311@gmail.com)
 
 ## 🤝 Contributing
